@@ -1,8 +1,13 @@
-body, button, input, select, optgroup, textarea {
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -21,11 +26,13 @@ body{
         padding-left: 0;
     }
 }
-.top-bar{
+
+.top-bar {
     padding: 12px 0;
     background-color: #f5f5f5;
 }
-.top-bar span{
+
+.top-bar span {
     font-size: 13px;
     font-weight: 300;
 }
@@ -36,6 +43,7 @@ body{
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
+
 /* Menampilkan dropdown saat hover */
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
@@ -68,7 +76,7 @@ body{
     color: #000;
 }
 
-.brand-prooduct h2::after{
+.brand-prooduct h2::after {
     content: "";
     display: flex;
     margin-top: 5px;
@@ -79,15 +87,26 @@ body{
 
 .quick-view {
     opacity: 0;
-    visibility: hidden;
-    transform: scale(0.9);
-    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    right: -2%;
+    transform: translateX(5px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hover-text-danger:hover {
+    color: #dc3545; /* Warna teks 'danger' bawaan Bootstrap */
+    transition: 0.3s;
+}
+
+.quick-view i {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
 }
 
 #gambar-content:hover .quick-view {
     opacity: 1;
-    visibility: visible;
-    transform: scale(1);
+    right: 0;
+    transform: translateX(0);
 }
 
 .menu-dropdown {
@@ -96,19 +115,23 @@ body{
     right: 4.5%;
     top: 8%;
     opacity: 0;
-    transform: translateY(10px); /* Geser ke bawah saat tidak di-hover */
+    transform: translateY(10px);
+    /* Geser ke bawah saat tidak di-hover */
     transition: opacity 0.3s ease, transform 0.3s ease;
-    pointer-events: none; /* Mencegah interaksi saat dropdown tidak terlihat */
+    pointer-events: none;
+    /* Mencegah interaksi saat dropdown tidak terlihat */
 }
 
 .d-lang:hover .menu-dropdown {
     opacity: 1;
     top: 6%;
-    transform: translateY(0); /* Geser ke atas saat di-hover */
-    pointer-events: auto; /* Aktifkan interaksi */
+    transform: translateY(0);
+    /* Geser ke atas saat di-hover */
+    pointer-events: auto;
+    /* Aktifkan interaksi */
 }
 
-.menu-dropdown button{
+.menu-dropdown button {
     color: #fff;
     font-size: 13px;
 }
@@ -155,29 +178,31 @@ Products Page
     font-size: 15px;
     font-weight: 500;
     position: relative;
-    padding-bottom: 10px;
     padding-top: 5px;
-    border-bottom: .0625rem solid #e9ecef;
     text-transform: uppercase;
 }
 
-.sidebar .sidebar-widget .widget-categories ul, .sidebar .sidebar-widget .widget-brands ul {
+.sidebar .sidebar-widget .widget-categories ul,
+.sidebar .sidebar-widget .widget-brands ul {
     margin: 0;
     list-style: circle;
     font-size: .9rem;
 }
 
-.sidebar .sidebar-widget .widget-categories ul li, .sidebar .sidebar-widget .widget-brands ul li {
+.sidebar .sidebar-widget .widget-categories ul li,
+.sidebar .sidebar-widget .widget-brands ul li {
     padding-top: 5px;
     padding-bottom: 5px;
     margin-left: -20px;
 }
 
-.sidebar .sidebar-widget .widget-categories ul li a, .sidebar .sidebar-widget .widget-brands ul li a {
+.sidebar .sidebar-widget .widget-categories ul li a,
+.sidebar .sidebar-widget .widget-brands ul li a {
     color: #333;
 }
 
-.sidebar .sidebar-widget .widget-categories ul li a:hover, .sidebar .sidebar-widget .widget-brands ul li a:hover {
+.sidebar .sidebar-widget .widget-categories ul li a:hover,
+.sidebar .sidebar-widget .widget-brands ul li a:hover {
     color: #3d55df;
     transition: 0.5s;
 }
@@ -279,28 +304,10 @@ Products Page
 
 .products-grid .products-top {
     background-color: #F6F7FB;
-    padding: 15px 15px;
     border-radius: 0.25rem;
     margin-bottom: 30px;
 }
 
-.products-grid .products-top > select {
-    border: 1px solid #ccc;
-    min-width: 150px;
-}
-
-.products-grid .products-top .products-found {
-    width: 300px;
-    float: left;
-}
-
-.products-grid .products-top .products-sort {
-    text-align: right;
-}
-
-.products-grid .products-top .products-found > p span {
-    font-weight: 500;
-}
 
 /* Product Page */
 .product-page .product-detail .product-name {
@@ -383,19 +390,25 @@ Products Page
     font-size: 25px;
 }
 
-.product-page .product-detail .product-categories ul, .product-page .product-detail .product-tags ul, .product-page .product-detail .product-share ul {
+.product-page .product-detail .product-categories ul,
+.product-page .product-detail .product-tags ul,
+.product-page .product-detail .product-share ul {
     list-style: none;
     padding: 0;
 }
 
-.product-page .product-detail .product-categories ul li, .product-page .product-detail .product-tags ul li, .product-page .product-detail .product-share ul li {
+.product-page .product-detail .product-categories ul li,
+.product-page .product-detail .product-tags ul li,
+.product-page .product-detail .product-share ul li {
     display: inline-block;
     margin: 0 8px 0 0;
     text-transform: capitalize;
     font-size: 0.85rem;
 }
 
-.product-page .product-detail .product-categories .categories-title, .product-page .product-detail .product-tags .categories-title, .product-page .product-detail .product-share .categories-title  {
+.product-page .product-detail .product-categories .categories-title,
+.product-page .product-detail .product-tags .categories-title,
+.product-page .product-detail .product-share .categories-title {
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -415,11 +428,11 @@ Products Page
 /*---------------------------
 FOOTER
 ----------------------------*/
-.footer__widget .input-group span{
+.footer__widget .input-group span {
     padding: 13px 0;
 }
 
-.footer__widget__social a i{
+.footer__widget__social a i {
     background-color: white;
     border-radius: 50%;
     padding: 13px;
