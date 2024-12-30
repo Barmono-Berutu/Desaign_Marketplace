@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace Sederhana</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css">
+
+    <!-- fonts google -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
+
+    <link type="text/css" href="style.css" rel="stylesheet">
+
+    <!-- fonts icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="nav-item d-flex gap-3">
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="fa fa-envelope m-0 p-0"></i>
+                            <span class="border-end pe-3">hello@colorlib.com</span>
+                        </div>
+                        <span>Free Shipping for all Order of $99</span>
+                    </div>
+
+                    <div class="d-lang">
+                        <span class="dropdown-toggle">
+                            English
+                        </span>
+
+                        <!-- menu -->
+                        <div class="dropdown-menu menu-dropdown position-absolute bg-dark rounded-0 p-1"
+                            aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">Spanish</button>
+                            <button class="dropdown-item" type="button">English</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="header-main py-3">
+            <div class="container">
+                <div class="menu d-flex align-items-center justify-content-between">
+                    <div class="brand-prooduct">
+                        <a href="index.html" class="nav-link fs-3 fw-bold" id="icon">MARKETPLACE</a>
+                    </div>
+
+
+                    <div class="search col-8">
+                        <div class="input-group input-group-sm mb-1">
+                            <input type="text" class="form-control rounded-0" placeholder="Search for items"
+                                aria-label="" aria-describedby="basic-addon1">
+                            <span class="input-group-text rounded-0 py-3 px-3 bg-dark" id="basic-addon1">
+                                <i class="fa fa-search text-light"></i>
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <div class="single-icon">
+                        <div class="d-flex gap-3">
+                            <a href="#" class="position-relative p-1">
+                                <i class="fa fa-shopping-bag fs-3 text-dark"></i>
+                                <span class="badge rounded-5 bg-danger text-light position-absolute"
+                                    style="top: 0; right: -20%;">5</span>
+                            </a>
+                            <a href="#" class="p-1">
+                                <i class="fa fa-user fs-3 text-dark"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="header-navbar border-top border-bottom">
+            <div class="container">
+                <ul class="navbar navbar-nav flex-row justify-content-start gap-3 p-1">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">SHOP</a>
+                    </li>
+                    <li class="nav-item dropdown position-relative">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button">
+                            PAGES
+                        </a>
+                        <ul class="dropdown-menu position-absolute">
+                            <li><a class="dropdown-item" href="product.html">Product</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="content-1 py-4">
+        <div class="container">
+            <div class="image-content d-flex gap-3">
+                <div class="col-7 rounded-1" style="background-color: #f5f5f5; background-image: url('https://images.pexels.com/photos/1666067/pexels-photo-1666067.jpeg?auto=compress&cs=tinysrgb&w=600'); background-size: cover; background-position: center;">
+                    <div class="content p-5 text-light">
+                        <p class="fw-semibold">TRENDING NOW</p>
+                        <p class="fw-bold fs-1">Big Sale 25% Laptop & PC</p>
+                        <span class="fw-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores enim molestiae officiis repudiandae fugiat, blanditiis esse repellat. Omnis ab assumenda possimus cupiditate placeat doloribus deserunt fugiat aliquid quasi aspernatur.</span>
+                        <div class="menu d-flex gap-3 py-3">
+                            <button class="btn btn-warning rounded-0">Shop Now</button>
+                            <button class="btn btn-outline-danger rounded-0">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="d-flex flex-column gap-2" style="width: 100%; max-width: 500px; margin: 0 auto;">
+                    <div class="rounded-1" style="background-color: #f5f5f5;">
+                        <div class="content p-3 ">
+                            <span class="fw-semibold d-block">10% Sale Off</span>
+                            <span class="fw-bold fs-3 d-block">Apple Watch Serial 7</span>
+                            <span class="fw-light d-block mt-2">Lorem ipsum dolor sit, amet consectetur
+                                adipisicing.</span>
+                            <button class="btn btn-danger mt-3 rounded-0">Shop now</button>
+                        </div>
+                    </div>
+                    <div class="rounded-1" style="background-color: #f5f5f5;">
+                        <div class="content p-3 ">
+                            <span class="fw-semibold d-block">10% Sale Off</span>
+                            <span class="fw-bold fs-3 d-block">Apple Watch Serial 7</span>
+                            <span class="fw-light d-block mt-2">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing.</span>
+                            <button class="btn btn-danger mt-3 rounded-0">Shop now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-2">
+        <div class="container">
+            <div class="brand-prooduct">
+                <h2 class="fs-5">BEST PRODUCT</h2>
+            </div>
+
+            <div class="row my-4">
+                <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                    <div class="single-product card rounded-1">
+                        <!-- Product Image -->
+                        <div class="product-img position-relative" id="gambar-content">
+                            <a href="product-detail.html">
+                                <img src="https://images.pexels.com/photos/2081199/pexels-photo-2081199.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    class="img-fluid" alt="Product Image">
+                            </a>
+
+                            <!-- icon eye -->
+                            <div class="quick-view position-absolute top-0 m-2" style="right: 0;">
+                                <i class="fa fa-eye fs-5"></i>
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="product-content p-2">
+                            <div class="rating d-flex gap-1 text-warning">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <h3 class="h6 pt-2">
+                                <a href="product-detail.html" class="text-dark text-decoration-none">
+                                    4K UHD LED Smart TV with Chromecast Built-in
+                                </a>
+                            </h3>
+                            <div class="product-price">
+                                <span class="font-weight-bold">$1.50</span>
+                            </div>
+                            <div class="pt-2">
+                                <button class="btn btn-outline-dark w-100 rounded-0">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                    <div class="single-product card rounded-1">
+                        <!-- Product Image -->
+                        <div class="product-img position-relative" id="gambar-content">
+                            <a href="product-detail.html">
+                                <img src="https://images.pexels.com/photos/2081199/pexels-photo-2081199.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    class="img-fluid" alt="Product Image">
+                            </a>
+
+                            <!-- icon eye -->
+                            <div class="quick-view position-absolute top-0 m-2" style="right: 0;">
+                                <i class="fa fa-eye fs-5"></i>
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="product-content p-2">
+                            <div class="rating d-flex gap-1 text-warning">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <h3 class="h6 pt-2">
+                                <a href="product-detail.html" class="text-dark text-decoration-none">
+                                    4K UHD LED Smart TV with Chromecast Built-in
+                                </a>
+                            </h3>
+                            <div class="product-price">
+                                <span class="font-weight-bold">$1.50</span>
+                            </div>
+                            <div class="pt-2">
+                                <button class="btn btn-outline-dark w-100 rounded-0">Add To Cart</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                    <div class="single-product card rounded-1">
+                        <!-- Product Image -->
+                        <div class="product-img position-relative" id="gambar-content">
+                            <a href="product-detail.html">
+                                <img src="https://images.pexels.com/photos/2081199/pexels-photo-2081199.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    class="img-fluid" alt="Product Image">
+                            </a>
+
+                            <!-- icon eye -->
+                            <div class="quick-view position-absolute top-0 m-2" style="right: 0;">
+                                <i class="fa fa-eye fs-5"></i>
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="product-content p-2">
+                            <div class="rating d-flex gap-1 text-warning">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <h3 class="h6 pt-2">
+                                <a href="product-detail.html" class="text-dark text-decoration-none">
+                                    4K UHD LED Smart TV with Chromecast Built-in
+                                </a>
+                            </h3>
+                            <div class="product-price">
+                                <span class="font-weight-bold">$1.50</span>
+                            </div>
+                            <div class="pt-2">
+                                <button class="btn btn-outline-dark w-100 rounded-0">Add To Cart</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                    <div class="single-product card rounded-1">
+                        <!-- Product Image -->
+                        <div class="product-img position-relative" id="gambar-content">
+                            <a href="product-detail.html">
+                                <img src="https://images.pexels.com/photos/2081199/pexels-photo-2081199.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    class="img-fluid" alt="Product Image">
+                            </a>
+
+                            <!-- icon eye -->
+                            <div class="quick-view position-absolute top-0 m-2" style="right: 0;">
+                                <i class="fa fa-eye fs-5"></i>
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="product-content p-2">
+                            <div class="rating d-flex gap-1 text-warning">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <h3 class="h6 pt-2">
+                                <a href="product-detail.html" class="text-dark text-decoration-none">
+                                    4K UHD LED Smart TV with Chromecast Built-in
+                                </a>
+                            </h3>
+                            <div class="product-price">
+                                <span class="font-weight-bold">$1.50</span>
+                            </div>
+                            <div class="pt-2">
+                                <button class="btn btn-outline-dark w-100 rounded-0">Add To Cart</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-2">
+        <div class="container">
+            <div class="brand-prooduct">
+                <h2 class="fs-5">RECOMENDATIONS PRODUCT</h2>
+            </div>
+
+            <div class="row my-4">
+                <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                    <div class="single-product card rounded-1">
+                        <!-- Product Image -->
+                        <div class="product-img position-relative" id="gambar-content">
+                            <a href="product-detail.html">
+                                <img src="https://images.pexels.com/photos/2081199/pexels-photo-2081199.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    class="img-fluid" alt="Product Image">
+                            </a>
+
+                            <!-- icon eye -->
+                            <div class="quick-view position-absolute top-0 m-2" style="right: 0;">
+                                <i class="fa fa-eye fs-5"></i>
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="product-content p-2">
+                            <div class="rating d-flex gap-1 text-warning">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <h3 class="h6 pt-2">
+                                <a href="product-detail.html" class="text-dark text-decoration-none">
+                                    4K UHD LED Smart TV with Chromecast Built-in
+                                </a>
+                            </h3>
+                            <div class="product-price">
+                                <span class="font-weight-bold">$1.50</span>
+                            </div>
+                            <div class="pt-2">
+                                <button class="btn btn-outline-dark w-100 rounded-0">Add To Cart</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                    <div class="single-product card rounded-1">
+                        <!-- Product Image -->
+                        <div class="product-img position-relative" id="gambar-content">
+                            <a href="product-detail.html">
+                                <img src="https://images.pexels.com/photos/2081199/pexels-photo-2081199.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    class="img-fluid" alt="Product Image">
+                            </a>
+
+                            <!-- icon eye -->
+                            <div class="quick-view position-absolute top-0 m-2" style="right: 0;">
+                                <i class="fa fa-eye fs-5"></i>
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="product-content p-2">
+                            <div class="rating d-flex gap-1 text-warning">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <h3 class="h6 pt-2">
+                                <a href="product-detail.html" class="text-dark text-decoration-none">
+                                    4K UHD LED Smart TV with Chromecast Built-in
+                                </a>
+                            </h3>
+                            <div class="product-price">
+                                <span class="font-weight-bold">$1.50</span>
+                            </div>
+                            <div class="pt-2">
+                                <button class="btn btn-outline-dark w-100 rounded-0">Add To Cart</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                    <div class="single-product card rounded-1">
+                        <!-- Product Image -->
+                        <div class="product-img position-relative" id="gambar-content">
+                            <a href="product-detail.html">
+                                <img src="https://images.pexels.com/photos/2081199/pexels-photo-2081199.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    class="img-fluid" alt="Product Image">
+                            </a>
+
+                            <!-- icon eye -->
+                            <div class="quick-view position-absolute top-0 m-2" style="right: 0;">
+                                <i class="fa fa-eye fs-5"></i>
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="product-content p-2">
+                            <div class="rating d-flex gap-1 text-warning">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <h3 class="h6 pt-2">
+                                <a href="product-detail.html" class="text-dark text-decoration-none">
+                                    4K UHD LED Smart TV with Chromecast Built-in
+                                </a>
+                            </h3>
+                            <div class="product-price">
+                                <span class="font-weight-bold">$1.50</span>
+                            </div>
+                            <div class="pt-2">
+                                <button class="btn btn-outline-dark w-100 rounded-0">Add To Cart</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                    <div class="single-product card rounded-1">
+                        <!-- Product Image -->
+                        <div class="product-img position-relative" id="gambar-content">
+                            <a href="product-detail.html">
+                                <img src="https://images.pexels.com/photos/2081199/pexels-photo-2081199.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    class="img-fluid" alt="Product Image">
+                            </a>
+
+                            <!-- icon eye -->
+                            <div class="quick-view position-absolute top-0 m-2" style="right: 0;">
+                                <i class="fa fa-eye fs-5"></i>
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="product-content p-2">
+                            <div class="rating d-flex gap-1 text-warning">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <h3 class="h6 pt-2">
+                                <a href="product-detail.html" class="text-dark text-decoration-none">
+                                    4K UHD LED Smart TV with Chromecast Built-in
+                                </a>
+                            </h3>
+                            <div class="product-price">
+                                <span class="font-weight-bold">$1.50</span>
+                            </div>
+                            <div class="pt-2">
+                                <button class="btn btn-outline-dark w-100 rounded-0">Add To Cart</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" style="background-color: #f3f6fa;">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <h2 class="fw-bold">MARKETPLACE</h2>
+                        </div>
+                        <ul class="list-unstyled fw-light d-flex gap-2 flex-column pt-2">
+                            <li>Address: 60-49 Road 11378 New York</li>
+                            <li>Phone: +65 11.188.888</li>
+                            <li>Email: hello@colorlib.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6 class="fw-bold">Useful Links</h6>
+                        <div class="d-flex gap-5 pt-2">
+                            <ul class="list-unstyled fw-light d-flex flex-column gap-2">
+                                <li><a href="#" class="nav-link">About Us</a></li>
+                                <li><a href="#" class="nav-link">About Our Shop</a></li>
+                                <li><a href="#" class="nav-link">Secure Shopping</a></li>
+                                <li><a href="#" class="nav-link">Delivery infomation</a></li>
+                                <li><a href="#" class="nav-link">Privacy Policy</a></li>
+                                <li><a href="#" class="nav-link">Our Sitemap</a></li>
+                            </ul>
+                            <ul class="list-unstyled fw-light d-flex flex-column gap-2">
+                                <li><a href="#" class="nav-link">Who We Are</a></li>
+                                <li><a href="#" class="nav-link">Our Services</a></li>
+                                <li><a href="#" class="nav-link">Projects</a></li>
+                                <li><a href="#" class="nav-link">Contact</a></li>
+                                <li><a href="#" class="nav-link">Innovation</a></li>
+                                <li><a href="#" class="nav-link">Testimonials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6 class="fw-bold">Join Our Newsletter Now</h6>
+                        <p class="text-dark fw-light pt-2">Get E-mail updates about our latest shop and special offers.
+                        </p>
+                        <div class="input-group input-group-sm mb-1">
+                            <input type="text" class="form-control rounded-0" placeholder="Enter your mail"
+                                aria-label="" aria-describedby="basic-addon1">
+                            <span class="input-group-text bg-dark px-3 fw-bold text-light rounded-0"
+                                id="basic-addon1">SUBSCRIBE</span>
+                        </div>
+                        <div class="footer__widget__social pt-4 d-flex gap-3">
+                            <a href="#" class="text-dark"><i class="fab fs-5 border fa-facebook"></i></a>
+                            <a href="#" class="text-dark"><i class="fab fs-5 border fa-instagram"></i></a>
+                            <a href="#" class="text-dark"><i class="fab fs-5 border fa-twitter"></i></a>
+                            <a href="#" class="text-dark"><i class="fab fs-5 border fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__copyright d-flex justify-content-between align-items-center border-top py-2 mt-3">
+                <div class="footer__copyright__text">
+                    <p class="m-0 fw-light" style="font-size: 13px;">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright ©
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved |
+                        This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a
+                            href="index.html" target="_blank">monoberutu </a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-white"><i class="fab fa-twitter fs-4 text-dark"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin fs-4 text-dark"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
